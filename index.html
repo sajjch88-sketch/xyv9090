@@ -751,8 +751,8 @@
         
         .tiers-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+            gap: 2.5rem;
         }
         
         .tier-card {
@@ -763,6 +763,42 @@
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
+        }
+        
+        .tier-content {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .tier-info {
+            flex: 1;
+            padding-right: 1rem;
+        }
+        
+        .tier-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tier-image img {
+            width: 180px;
+            height: 135px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease;
+            border: 3px solid rgba(4, 232, 165, 0.2);
+            object-position: center;
+        }
+        
+        .tier-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(4, 232, 165, 0.5);
+            border-color: rgba(4, 232, 165, 0.5);
         }
         
         .tier-card.featured {
@@ -1020,6 +1056,31 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+            }
+            
+            /* Tiers Mobile Responsive */
+            .tiers-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .tier-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .tier-info {
+                padding-right: 0;
+            }
+            
+            .tier-image img {
+                width: 160px;
+                height: 120px;
+                border-radius: 20px;
+            }
+            
+            .tier-card {
+                padding: 2rem;
             }
             
             /* Hero Section Mobile Fixes */
@@ -1417,88 +1478,124 @@
                 <div class="section-badge">💎 Investment Tiers</div>
                 <h2 class="section-title">Choose Your <span class="gradient-text">Investment Plan</span></h2>
                 <p class="section-subtitle">
-                    Start small and grow big. Each tier offers increasing daily returns and monthly profits.
+                    Start small and grow big. Each tier offers increasing daily returns and great earnings potential.
                 </p>
             </div>
             
             <div class="tiers-grid">
                 <div class="tier-card animate-on-scroll">
-                    <h3 class="tier-name">Starter</h3>
-                    <div class="tier-deposit">$20</div>
-                    <div class="tier-profit">$0.21 daily (1.0%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Perfect for beginners</li>
-                        <li><i class="ri-check-line"></i> $6 monthly profit</li>
-                        <li><i class="ri-check-line"></i> 24/7 support</li>
-                        <li><i class="ri-check-line"></i> Daily withdrawals</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Get Started</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Starter</h3>
+                            <div class="tier-deposit">$20</div>
+                            <div class="tier-profit">$0.21 daily (1.0%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Perfect for beginners</li>
+                                <li><i class="ri-check-line"></i> 24/7 support</li>
+                                <li><i class="ri-check-line"></i> Daily withdrawals</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Get Started</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(1).jpg?raw=true" alt="Starter Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tier-card animate-on-scroll">
-                    <h3 class="tier-name">Basic</h3>
-                    <div class="tier-deposit">$30</div>
-                    <div class="tier-profit">$0.36 daily (1.2%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Steady daily returns</li>
-                        <li><i class="ri-check-line"></i> $10.8 monthly profit</li>
-                        <li><i class="ri-check-line"></i> Priority support</li>
-                        <li><i class="ri-check-line"></i> Bonus spins access</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Choose Plan</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Basic</h3>
+                            <div class="tier-deposit">$30</div>
+                            <div class="tier-profit">$0.36 daily (1.2%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Steady daily returns</li>
+                                <li><i class="ri-check-line"></i> Priority support</li>
+                                <li><i class="ri-check-line"></i> Bonus spins access</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Choose Plan</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(2).jpg?raw=true" alt="Basic Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tier-card animate-on-scroll">
-                    <h3 class="tier-name">Bronze</h3>
-                    <div class="tier-deposit">$50</div>
-                    <div class="tier-profit">$0.75 daily (1.5%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Balanced growth</li>
-                        <li><i class="ri-check-line"></i> $22.5 monthly profit</li>
-                        <li><i class="ri-check-line"></i> VIP status</li>
-                        <li><i class="ri-check-line"></i> Higher referral rates</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Choose Plan</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Bronze</h3>
+                            <div class="tier-deposit">$50</div>
+                            <div class="tier-profit">$0.75 daily (1.5%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Balanced growth</li>
+                                <li><i class="ri-check-line"></i> VIP status</li>
+                                <li><i class="ri-check-line"></i> Higher referral rates</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Choose Plan</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(3).jpg?raw=true" alt="Bronze Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tier-card featured animate-on-scroll">
-                    <h3 class="tier-name">Gold</h3>
-                    <div class="tier-deposit">$200</div>
-                    <div class="tier-profit">$4.00 daily (2.0%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Premium returns</li>
-                        <li><i class="ri-check-line"></i> $120 monthly profit</li>
-                        <li><i class="ri-check-line"></i> Gold VIP status</li>
-                        <li><i class="ri-check-line"></i> Exclusive bonuses</li>
-                        <li><i class="ri-check-line"></i> Personal manager</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Choose Plan</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Gold</h3>
+                            <div class="tier-deposit">$200</div>
+                            <div class="tier-profit">$4.00 daily (2.0%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Premium returns</li>
+                                <li><i class="ri-check-line"></i> Gold VIP status</li>
+                                <li><i class="ri-check-line"></i> Exclusive bonuses</li>
+                                <li><i class="ri-check-line"></i> Personal manager</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Choose Plan</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(4).jpg?raw=true" alt="Gold Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tier-card animate-on-scroll">
-                    <h3 class="tier-name">Platinum</h3>
-                    <div class="tier-deposit">$500</div>
-                    <div class="tier-profit">$11 daily (2.2%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Elite investor</li>
-                        <li><i class="ri-check-line"></i> $4500 monthly profit</li>
-                        <li><i class="ri-check-line"></i> Platinum VIP</li>
-                        <li><i class="ri-check-line"></i> Maximum benefits</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Choose Plan</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Platinum</h3>
+                            <div class="tier-deposit">$500</div>
+                            <div class="tier-profit">$11 daily (2.2%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Elite investor</li>
+                                <li><i class="ri-check-line"></i> Platinum VIP</li>
+                                <li><i class="ri-check-line"></i> Maximum benefits</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Choose Plan</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(5).jpg?raw=true" alt="Platinum Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tier-card animate-on-scroll">
-                    <h3 class="tier-name">Diamond</h3>
-                    <div class="tier-deposit">$1000</div>
-                    <div class="tier-profit">$24 daily (2.4%)</div>
-                    <ul class="tier-features">
-                        <li><i class="ri-check-line"></i> Professional grade</li>
-                        <li><i class="ri-check-line"></i> $10500 monthly profit</li>
-                        <li><i class="ri-check-line"></i> Diamond VIP</li>
-                        <li><i class="ri-check-line"></i> All features included</li>
-                    </ul>
-                    <a href="#cta" class="tier-button">Choose Plan</a>
+                    <div class="tier-content">
+                        <div class="tier-info">
+                            <h3 class="tier-name">Diamond</h3>
+                            <div class="tier-deposit">$1000</div>
+                            <div class="tier-profit">$24 daily (2.4%)</div>
+                            <ul class="tier-features">
+                                <li><i class="ri-check-line"></i> Professional grade</li>
+                                <li><i class="ri-check-line"></i> Diamond VIP</li>
+                                <li><i class="ri-check-line"></i> All features included</li>
+                            </ul>
+                            <a href="#cta" class="tier-button">Choose Plan</a>
+                        </div>
+                        <div class="tier-image">
+                            <img src="https://github.com/sajjch88-sketch/iluearnta/blob/main/task%20%20(6).jpg?raw=true" alt="Diamond Plan" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1614,7 +1711,7 @@
             
             // Get download link based on platform
             const downloadLink = platform === 'android' 
-                ? 'https://drive.google.com/uc?export=download&id=1GlHxmFFla9eP1YK2y6EagnELTl6vSgxW'
+                ? 'https://drive.google.com/uc?export=download&id=1v6xwqkfMtbxDJr6BAyrPDNQ2PSB0AOth'
                 : 'https://apps.apple.com/app/iluearnta/id123456789';
             
             // Track download
