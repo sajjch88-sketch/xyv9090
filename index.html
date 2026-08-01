@@ -1,2020 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IluEarntA - Earn Money Daily</title>
-    <link rel="icon" type="image/png"
-        href="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/app_logo.png">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/app_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    <meta name="description"
-        content="Download IluEarntA - The ultimate money earning app with daily profits, investments, referrals, spin wheels & tasks. Install now and start earning today!">
-    <meta name="keywords"
-        content="IluEarntA app download, earn money app, daily earning app, investment app, referral app, spin wheel app, money making app, install app">
-    <meta name="author" content="IluEarntA">
-    <meta name="robots" content="index, follow">
-    <meta name="apple-itunes-app" content="app-id=123456789">
-    <meta name="google-play-app" content="app-id=com.iluearnta.app">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://iluearnta.com/">
-    <meta property="og:title" content="IluEarntA - Download & Earn Money Daily">
-    <meta property="og:description"
-        content="Install IluEarntA app now and start earning money through investments, referrals, spin wheels and daily tasks. The ultimate money earning app with daily profits and multiple income streams.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/app_logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="IluEarntA - Earn Money Daily App">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://iluearnta.com/">
-    <meta property="twitter:title" content="IluEarntA - Download App">
-    <meta property="twitter:description"
-        content="Install now and start earning daily with multiple income streams. Investment plans, referrals, spin wheels & tasks.">
-    <meta property="twitter:image"
-        content="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/app_logo.png">
-    <meta property="twitter:image:alt" content="IluEarntA - Earn Money Daily App">
-    <meta property="twitter:app:name:iphone" content="IluEarntA">
-    <meta property="twitter:app:id:iphone" content="123456789">
-    <meta property="twitter:app:name:googleplay" content="IluEarntA">
-    <meta property="twitter:app:id:googleplay" content="com.iluearnta.app">
-
-    <!-- Fonts and Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            height: 100%;
-            overflow: auto;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #000000;
-            color: #ffffff;
-            line-height: 1.6;
-            overflow-x: hidden;
-            overflow-y: auto;
-            height: auto;
-            min-height: 100vh;
-        }
-
-        /* Advanced Animation System */
-        @keyframes floatUp {
-            0% {
-                transform: translateY(100vh) scale(0);
-                opacity: 0;
-            }
-
-            10% {
-                opacity: 1;
-            }
-
-            90% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-100vh) scale(1);
-                opacity: 0;
-            }
-        }
-
-        @keyframes glowPulse {
-
-            0%,
-            100% {
-                box-shadow: 0 0 20px rgba(4, 232, 165, 0.5);
-            }
-
-            50% {
-                box-shadow: 0 0 40px rgba(4, 232, 165, 0.8), 0 0 60px rgba(4, 232, 165, 0.4);
-            }
-        }
-
-        @keyframes textGradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        @keyframes slideInFromLeft {
-            0% {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInFromRight {
-            0% {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes bounceIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.3);
-            }
-
-            50% {
-                opacity: 1;
-                transform: scale(1.05);
-            }
-
-            70% {
-                transform: scale(0.9);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes rotate3d {
-            0% {
-                transform: rotateY(0deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-
-        /* Scroll Animations */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Background Effects */
-        .bg-gradient {
-            background: #000000;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .floating-orbs {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-            overflow: hidden;
-        }
-
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.3;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .orb1 {
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(4, 232, 165, 0.6), rgba(3, 184, 134, 0.2));
-            top: 10%;
-            left: 5%;
-            animation-duration: 25s;
-        }
-
-        .orb2 {
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(4, 232, 165, 0.2));
-            top: 60%;
-            right: 10%;
-            animation-duration: 30s;
-            animation-delay: -5s;
-        }
-
-        .orb3 {
-            width: 350px;
-            height: 350px;
-            background: radial-gradient(circle, rgba(4, 232, 165, 0.4), rgba(255, 255, 255, 0.1));
-            bottom: 15%;
-            left: 40%;
-            animation-duration: 35s;
-            animation-delay: -10s;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px) translateX(0px) scale(1);
-            }
-
-            25% {
-                transform: translateY(-30px) translateX(20px) scale(1.1);
-            }
-
-            50% {
-                transform: translateY(-20px) translateX(-30px) scale(0.9);
-            }
-
-            75% {
-                transform: translateY(-40px) translateX(10px) scale(1.05);
-            }
-        }
-
-        /* Particle System */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .particle {
-            position: absolute;
-            width: 21px;
-            height: 21px;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 50%;
-            animation: floatUp 15s linear infinite;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
-
-        /* Navigation */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 1rem 2rem;
-            background: rgba(10, 14, 23, 0.8);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .navbar.scrolled {
-            background: rgba(10, 14, 23, 0.95);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 800;
-            font-size: 1.8rem;
-        }
-
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            animation: glowPulse 2s ease-in-out infinite;
-        }
-
-        .logo-text {
-            background: linear-gradient(135deg, #ffffff 40%, #04e8a5 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: textGradient 3s ease-in-out infinite;
-            background-size: 200% 200%;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2.5rem;
-        }
-
-        .nav-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #04e8a5;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #04e8a5;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            color: #000000;
-            padding: 0.875rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(4, 232, 165, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(4, 232, 165, 0.5);
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 6rem 2rem 2rem;
-            background: radial-gradient(ellipse at center, rgba(4, 232, 165, 0.05) 0%, transparent 70%);
-            height: 100vh;
-        }
-
-        .hero-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero-content {
-            animation: slideInFromLeft 1s ease-out;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(4, 232, 165, 0.1);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(4, 232, 165, 0.3);
-            backdrop-filter: blur(10px);
-            animation: bounceIn 1s ease-out 0.3s both;
-        }
-
-        .hero-badge i {
-            color: #04e8a5;
-            font-size: 1.2rem;
-        }
-
-        .hero-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 900;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #04e8a5, #03b886, #ffffff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: textGradient 3s ease-in-out infinite;
-            background-size: 200% 200%;
-        }
-
-        .hero-description {
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 2.5rem;
-            line-height: 1.6;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            color: #000000;
-            padding: 1.25rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(4, 232, 165, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(4, 232, 165, 0.5);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
-            padding: 1.25rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
-            transform: translateY(-3px);
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
-            font-weight: 800;
-            color: #04e8a5;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .hero-visual {
-            position: relative;
-            animation: slideInFromRight 1s ease-out;
-        }
-
-        .earnings-card {
-            background: linear-gradient(135deg, rgba(4, 232, 165, 0.1), rgba(3, 184, 134, 0.05));
-            border-radius: 30px;
-            padding: 3rem;
-            border: 1px solid rgba(4, 232, 165, 0.3);
-            backdrop-filter: blur(20px);
-            position: relative;
-            overflow: hidden;
-            transform: perspective(1000px) rotateY(-5deg);
-            transition: transform 0.3s ease;
-        }
-
-        .earnings-card:hover {
-            transform: perspective(1000px) rotateY(0deg);
-        }
-
-        .earnings-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(4, 232, 165, 0.1), transparent);
-            animation: rotate3d 10s linear infinite;
-        }
-
-        .card-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .earning-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .earning-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateX(5px);
-        }
-
-        .earning-label {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-weight: 600;
-        }
-
-        .earning-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        .earning-amount {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #04e8a5;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 6rem 0;
-            position: relative;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-badge {
-            display: inline-block;
-            background: rgba(4, 232, 165, 0.1);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(4, 232, 165, 0.3);
-            font-weight: 600;
-        }
-
-        .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.7);
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2.5rem;
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #04e8a5, #03b886);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(4, 232, 165, 0.3);
-            box-shadow: 0 20px 40px rgba(4, 232, 165, 0.2);
-        }
-
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover .feature-icon {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .feature-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .feature-description {
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-stats {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .feature-stat {
-            text-align: center;
-        }
-
-        .feature-stat-value {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #04e8a5;
-        }
-
-        .feature-stat-label {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
-            margin-top: 0.25rem;
-        }
-
-        /* Investment Tiers Section */
-        .tiers {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, rgba(4, 232, 165, 0.05), transparent);
-        }
-
-        .tiers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .tier-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 25px;
-            padding: 2.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tier-content {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .tier-info {
-            flex: 1;
-            padding-right: 1rem;
-        }
-
-        .tier-image {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tier-image img {
-            width: 180px;
-            height: 135px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            transition: all 0.4s ease;
-            border: 3px solid rgba(4, 232, 165, 0.2);
-            object-position: center;
-        }
-
-        .tier-image img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(4, 232, 165, 0.5);
-            border-color: rgba(4, 232, 165, 0.5);
-        }
-
-        .tier-card.featured {
-            border-color: #04e8a5;
-            transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(4, 232, 165, 0.3);
-        }
-
-        .tier-card.featured::before {
-            content: 'MOST POPULAR';
-            position: absolute;
-            top: 15px;
-            right: -30px;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            color: #000000;
-            padding: 0.5rem 3rem;
-            font-size: 0.75rem;
-            font-weight: 700;
-            transform: rotate(45deg);
-        }
-
-        .tier-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(4, 232, 165, 0.3);
-        }
-
-        .tier-card.featured:hover {
-            transform: scale(1.05) translateY(-10px);
-        }
-
-        .tier-name {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .tier-deposit {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #04e8a5;
-            margin-bottom: 0.5rem;
-        }
-
-        .tier-profit {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2rem;
-        }
-
-        .tier-features {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .tier-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .tier-features i {
-            color: #04e8a5;
-        }
-
-        .tier-button {
-            width: 100%;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            color: #000000;
-            padding: 1rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            display: block;
-            transition: all 0.3s ease;
-        }
-
-        .tier-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(4, 232, 165, 0.5);
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            padding: 6rem 0;
-        }
-
-        .testimonial-slider {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 3rem;
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            display: none;
-            backdrop-filter: blur(10px);
-        }
-
-        .testimonial-card.active {
-            display: block;
-            animation: bounceIn 0.6s ease-out;
-        }
-
-        .testimonial-quote {
-            font-size: 1.4rem;
-            font-weight: 500;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #04e8a5, #03b886);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .author-info h4 {
-            font-weight: 700;
-            margin-bottom: 0.25rem;
-        }
-
-        .author-info p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        .testimonial-nav {
-            display: flex;
-            justify-content: center;
-            gap: 0.75rem;
-            margin-top: 2rem;
-        }
-
-        .nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-dot.active {
-            background: #04e8a5;
-            transform: scale(1.2);
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, rgba(4, 232, 165, 0.1), rgba(3, 184, 134, 0.05));
-            text-align: center;
-        }
-
-        .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .cta-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-description {
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 2.5rem;
-            line-height: 1.6;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 3rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: #04e8a5;
-        }
-
-        .footer p {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 1024px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-                text-align: center;
-            }
-
-            .hero-visual {
-                order: -1;
-            }
-
-            .hero-stats {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            /* Tiers Mobile Responsive */
-            .tiers-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .tier-content {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .tier-info {
-                padding-right: 0;
-            }
-
-            .tier-image img {
-                width: 160px;
-                height: 120px;
-                border-radius: 20px;
-            }
-
-            .tier-card {
-                padding: 2rem;
-            }
-
-            /* Hero Section Mobile Fixes */
-            .hero {
-                min-height: 90vh;
-                padding: 2rem 0;
-            }
-
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-                text-align: left;
-                padding: 0 1.5rem;
-            }
-
-            .hero-title {
-                font-size: 3rem;
-                line-height: 1.1;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-description {
-                font-size: 1.3rem;
-                margin-bottom: 2rem;
-                line-height: 1.6;
-            }
-
-            .hero-buttons {
-                justify-content: flex-start;
-                flex-direction: column;
-                gap: 1rem;
-                margin-bottom: 2rem;
-            }
-
-            .btn-primary,
-            .btn-secondary {
-                padding: 1.5rem 3rem;
-                font-size: 1.3rem;
-                width: 100%;
-                max-width: 320px;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            /* Hero Visual Mobile */
-            .hero-visual {
-                display: none;
-            }
-
-            /* Hero Stats Mobile */
-            .hero-stats {
-                display: none;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-
-            .stat-label {
-                font-size: 0.85rem;
-            }
-
-            /* Navigation Mobile */
-            .navbar {
-                padding: 0.75rem 1rem;
-            }
-
-            .logo {
-                font-size: 1.25rem;
-            }
-
-            .logo-icon {
-                width: 35px;
-                height: 35px;
-                font-size: 1.2rem;
-            }
-
-            .cta-button {
-                padding: 0.75rem 1.5rem;
-                font-size: 0.9rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .section-subtitle {
-                font-size: 1rem;
-            }
-
-            .features-grid,
-            .tiers-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .tier-card.featured {
-                transform: scale(1);
-            }
-
-            .cta-title {
-                font-size: 2.2rem;
-            }
-
-            .cta-description {
-                font-size: 1rem;
-            }
-
-            .testimonial-card {
-                padding: 1.5rem;
-            }
-
-            .testimonial-quote {
-                font-size: 1rem;
-            }
-        }
-
-        /* Extra small mobile devices */
-        @media (max-width: 480px) {
-            .hero-container {
-                gap: 0.8rem;
-                padding: 0 1rem;
-            }
-
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .stat-label {
-                font-size: 0.75rem;
-            }
-
-            .btn-primary,
-            .btn-secondary {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
-                max-width: 240px;
-            }
-
-            .hero-stats {
-                gap: 1rem;
-                margin-top: 2rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <!-- Favicon যুক্ত করা হয়েছে -->
+  <link rel="icon" href="https://github.com/sajjch88-sketch/xyv9090/blob/main/jkjkjkjkjkjk.png?raw=true" type="image/png">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#2a2a2a",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed-dim": "#fcba64",
+            "surface-container-low": "#1c1b1b",
+            "on-background": "#e5e2e1",
+            "surface-bright": "#3a3939",
+            "primary-fixed-dim": "#e9c349",
+            "on-surface": "#e5e2e1",
+            "on-secondary-fixed-variant": "#643f00",
+            "surface": "#131313",
+            "surface-tint": "#e9c349",
+            "primary-fixed": "#ffe088",
+            "on-tertiary-fixed-variant": "#534608",
+            "outline-variant": "#4d4635",
+            "secondary-container": "#845400",
+            "tertiary-fixed-dim": "#dac67d",
+            "error-container": "#93000a",
+            "on-primary-fixed": "#241a00",
+            "on-primary-container": "#554300",
+            "surface-container": "#201f1f",
+            "on-secondary": "#462a00",
+            "surface-dim": "#131313",
+            "surface-container-highest": "#353534",
+            "on-secondary-container": "#ffd199",
+            "secondary-fixed": "#ffddb6",
+            "tertiary-container": "#c5b26b",
+            "surface-variant": "#353534",
+            "on-primary": "#3c2f00",
+            "outline": "#99907c",
+            "on-primary-fixed-variant": "#574500",
+            "background": "#131313",
+            "inverse-primary": "#735c00",
+            "on-error": "#690005",
+            "surface-container-lowest": "#0e0e0e",
+            "tertiary-fixed": "#f7e296",
+            "on-tertiary-fixed": "#221b00",
+            "on-secondary-fixed": "#2a1800",
+            "tertiary": "#e2ce84",
+            "inverse-surface": "#e5e2e1",
+            "on-tertiary-container": "#514406",
+            "secondary": "#fcba64",
+            "inverse-on-surface": "#313030",
+            "primary": "#f2ca50",
+            "on-tertiary": "#3a3000",
+            "primary-container": "#d4af37",
+            "on-surface-variant": "#d0c5af",
+            "error": "#ffb4ab"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "stack-sm": "8px",
+            "stack-xl": "64px",
+            "margin-mobile": "20px",
+            "gutter": "24px",
+            "stack-md": "16px",
+            "stack-lg": "32px",
+            "container-max": "1200px"
+          },
+          "fontFamily": {
+            "label-sm": ["JetBrains Mono"],
+            "body-lg": ["Hanken Grotesk"],
+            "headline-md": ["Hanken Grotesk"],
+            "display-lg": ["Hanken Grotesk"],
+            "label-md": ["JetBrains Mono"],
+            "headline-lg-mobile": ["Hanken Grotesk"],
+            "headline-lg": ["Hanken Grotesk"],
+            "body-md": ["Hanken Grotesk"]
+          },
+          "fontSize": {
+            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+            "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0A0A0A;
+      color: #e5e2e1;
+      overflow-x: hidden;
+    }
+
+    .golden-gradient-bg {
+      background: linear-gradient(135deg, #f2ca50 0%, #d4af37 50%, #735c00 100%);
+    }
+
+    .golden-text-glow {
+      text-shadow: 0 0 10px rgba(242, 202, 80, 0.4);
+    }
+
+    .premium-card {
+      background: #121212;
+      border: 1px solid rgba(242, 202, 80, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .premium-card:hover {
+      border-color: rgba(242, 202, 80, 0.3);
+      box-shadow: 0 0 20px rgba(242, 202, 80, 0.05);
+    }
+
+    .circuit-pattern {
+      background-image: radial-gradient(circle at 2px 2px, rgba(242, 202, 80, 0.05) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(242, 202, 80, 0.08) 0%, transparent 70%);
+      filter: blur(60px);
+      z-index: -1;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
 </head>
+<body class="font-body-md text-body-md antialiased circuit-pattern">
 
-<body class="bg-gradient">
-    <!-- Background Effects -->
-    <div class="floating-orbs">
-        <div class="orb orb1"></div>
-        <div class="orb orb2"></div>
-        <div class="orb orb3"></div>
+  <!-- Header: TopNavBar -->
+  <header class="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10 shadow-sm">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+      <div class="flex items-center gap-2">
+        <!-- সাইটের আইকন যুক্ত করা হয়েছে -->
+        <img src="https://github.com/sajjch88-sketch/xyv9090/blob/main/jkjkjkjkjkjk.png?raw=true" alt="CoxsCoin Icon" class="w-8 h-8 rounded-full object-cover">
+        <span class="font-headline-md text-headline-md font-bold text-primary golden-text-glow">CoxsCoin</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Platform</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Security</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Mining</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Support</a>
+      </nav>
+      <div class="flex items-center">
+        <!-- ডাউনলোড লিংক আপডেট করা হয়েছে -->
+        <a href="https://drive.google.com/file/d/1gglr4AaGHSrnfuV7Dd6tkyGfyZcjPyfC/view?usp=sharing" target="_blank" class="golden-gradient-bg text-on-primary-fixed font-bold px-6 py-3 rounded-lg active:scale-95 transition-transform shadow-lg hover:shadow-primary/20 inline-block">
+          Download App
+        </a>
+      </div>
     </div>
+  </header>
 
-    <div class="particles" id="particles"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon"><img
-                        src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/app_logo.png"
-                        alt="IluEarntA" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-                <div class="logo-text">IluEarntA</div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#tiers">Investment Plans</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-            </ul>
-
-            <a href="#cta" class="cta-button">Start Earning</a>
-        </div>
-    </nav>
-
+  <main>
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Download <span class="gradient-text">IluEarntA</span><br>
-                    Earn Money Daily
-                </h1>
-
-                <p class="hero-description">
-                    The ultimate money earning app with daily profits, investments, referrals, spin wheels & tasks.
-                    Install now and start your journey to financial freedom!
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary" onclick="handleAppDownload('android')">
-                        <i class="ri-google-play-fill"></i> Download for Android
-                    </a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number" data-target="50000">0</div>
-                        <div class="stat-label">Active Users</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-target="2400000">0</div>
-                        <div class="stat-label">Total Paid</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-target="4.8">0</div>
-                        <div class="stat-label">App Rating ⭐</div>
-                    </div>
-                </div>
+    <section class="relative overflow-hidden pt-stack-xl pb-24 md:pt-32 md:pb-40">
+      <div class="hero-glow top-0 left-1/2 -translate-x-1/2"></div>
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
+        <div class="text-left z-10">
+          <h1 class="font-display-lg text-display-lg md:text-[64px] md:leading-[1.1] mb-stack-md text-on-background">
+            CoxsCoin: The Future is <span class="text-primary golden-text-glow">Decentralized</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
+            Elite decentralized mining at your fingertips. Secure, Limitless, and Secure. Experience the pinnacle of institutional-grade wealth management.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <!-- ডাউনলোড লিংক আপডেট করা হয়েছে -->
+            <a href="https://drive.google.com/file/d/1gglr4AaGHSrnfuV7Dd6tkyGfyZcjPyfC/view?usp=sharing" target="_blank" class="golden-gradient-bg text-on-primary-fixed font-bold px-10 py-5 rounded-xl text-lg active:scale-95 transition-transform shadow-[0_0_30px_rgba(242,202,80,0.3)] inline-block text-center">
+              Download App Now
+            </a>
+            <button class="border border-primary text-primary font-bold px-10 py-5 rounded-xl text-lg hover:bg-primary/5 transition-colors">
+              View Platform
+            </button>
+          </div>
+          <div class="mt-12 flex items-center gap-6">
+            <div class="flex -space-x-4">
+              <div class="w-12 h-12 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary scale-75">shield</span>
+              </div>
+              <div class="w-12 h-12 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary scale-75">bolt</span>
+              </div>
+              <div class="w-12 h-12 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary scale-75">public</span>
+              </div>
             </div>
-
-            <div class="hero-visual">
-                <div class="earnings-card">
-                    <h3 class="card-title">Daily Earnings Potential</h3>
-
-                    <div class="earning-item">
-                        <div class="earning-label">
-                            <div class="earning-icon">📈</div>
-                            <span>Investment Returns</span>
-                        </div>
-                        <div class="earning-amount">$24/day</div>
-                    </div>
-
-                    <div class="earning-item">
-                        <div class="earning-label">
-                            <div class="earning-icon">🎰</div>
-                            <span>Spin Wheel Wins</span>
-                        </div>
-                        <div class="earning-amount">$100/spin</div>
-                    </div>
-
-                    <div class="earning-item">
-                        <div class="earning-label">
-                            <div class="earning-icon">👥</div>
-                            <span>Referral Bonuses</span>
-                        </div>
-                        <div class="earning-amount">Unlimited</div>
-                    </div>
-
-                    <div class="earning-item">
-                        <div class="earning-label">
-                            <div class="earning-icon">✅</div>
-                            <span>Task Completion</span>
-                        </div>
-                        <div class="earning-amount">$4500/mo</div>
-                    </div>
-                </div>
+            <div class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+              Trusted by 500k+ Miners Global
             </div>
+          </div>
         </div>
+        <div class="relative flex justify-center items-center">
+          <div class="absolute w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px]"></div>
+          <div class="animate-float relative z-20">
+            <!-- হিরো ইমেজ আপডেট করা হয়েছে -->
+            <img alt="CoxsCoin Logo" class="max-w-full h-auto drop-shadow-[0_0_50px_rgba(242,202,80,0.4)]" src="https://github.com/sajjch88-sketch/xyv9090/blob/main/jkjkjkjkjkjk.png?raw=true"/>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <div class="section-badge">✨ Multiple Earning Opportunities</div>
-                <h2 class="section-title">Ways to Earn Money with <span class="gradient-text">IluEarntA</span></h2>
-                <p class="section-subtitle">
-                    Discover various income streams designed to maximize your daily earnings and build your wealth
-                    consistently.
-                </p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Investment Plans</h3>
-                    <p class="feature-description">
-                        Choose from 7 investment tiers with daily returns ranging from 1.0% to 2.4%. Start with as
-                        little as $20 and earn up to $24 daily.
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">1.0-2.4%</div>
-                            <div class="feature-stat-label">Daily Returns</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">$20-$1000</div>
-                            <div class="feature-stat-label">Investment Range</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Task Completion</h3>
-                    <p class="feature-description">
-                        Complete simple daily tasks and earn instant rewards. New tasks added regularly with varying
-                        difficulty levels and payouts.
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">$150/day</div>
-                            <div class="feature-stat-label">Max Earnings</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">Instant</div>
-                            <div class="feature-stat-label">Payouts</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">🎰</div>
-                    <h3 class="feature-title">Spin & Win</h3>
-                    <p class="feature-description">
-                        Try your luck with our exciting spin wheel. Win prizes from $0.10 to $100 with just $1 per spin.
-                        Multiple wins daily!
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">$100</div>
-                            <div class="feature-stat-label">Max Prize</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">$1</div>
-                            <div class="feature-stat-label">Per Spin</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">👥</div>
-                    <h3 class="feature-title">Referral Program</h3>
-                    <p class="feature-description">
-                        Invite friends and earn lifetime commissions. Build your network and create passive income from
-                        their activities.
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">10%</div>
-                            <div class="feature-stat-label">Commission</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">Lifetime</div>
-                            <div class="feature-stat-label">Earnings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">💎</div>
-                    <h3 class="feature-title">VIP Levels</h3>
-                    <p class="feature-description">
-                        Progress through VIP levels and unlock exclusive benefits, higher earning rates, and special
-                        bonuses.
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">10</div>
-                            <div class="feature-stat-label">VIP Levels</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">2x</div>
-                            <div class="feature-stat-label">Max Bonus</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">🏆</div>
-                    <h3 class="feature-title">Achievement Rewards</h3>
-                    <p class="feature-description">
-                        Complete challenges and unlock achievements. Earn bonus rewards for reaching milestones and
-                        staying active.
-                    </p>
-                    <div class="feature-stats">
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">50+</div>
-                            <div class="feature-stat-label">Achievements</div>
-                        </div>
-                        <div class="feature-stat">
-                            <div class="feature-stat-value">$500+</div>
-                            <div class="feature-stat-label">Bonus Pool</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Description Section (Features) -->
+    <section class="py-stack-xl md:py-40 bg-surface-container-lowest/50">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+        <div class="text-center mb-stack-xl">
+          <h2 class="font-headline-lg text-headline-lg mb-4">Engineered for <span class="text-primary">Elite Performance</span></h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Our ecosystem is built on three pillars that define the next generation of decentralized finance.</p>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+          <!-- Feature 1 -->
+          <div class="premium-card p-stack-lg rounded-2xl flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-stack-md border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Secure Mining</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">
+              State-of-the-art encryption and cold-storage protocols ensure your assets remain impenetrable to external threats.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="premium-card p-stack-lg rounded-2xl flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-stack-md border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">hub</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Decentralized Network</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">
+              A peer-to-peer infrastructure that removes intermediaries, giving you total sovereign control over your crypto mining.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="premium-card p-stack-lg rounded-2xl flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-stack-md border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Limitless Potential</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">
+              Scalable mining algorithms designed to adapt and grow as the blockchain ecosystem evolves toward a multi-chain future.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Investment Tiers Section -->
-    <section class="tiers" id="tiers">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <div class="section-badge">💎 Investment Tiers</div>
-                <h2 class="section-title">Choose Your <span class="gradient-text">Investment Plan</span></h2>
-                <p class="section-subtitle">
-                    Start small and grow big. Each tier offers increasing daily returns and great earnings potential.
-                </p>
+    <!-- App Preview / Bento Grid Style -->
+    <section class="py-stack-xl md:py-40">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div class="md:col-span-8 premium-card rounded-3xl overflow-hidden relative min-h-[400px] flex items-center">
+            <div class="p-stack-lg z-10 max-w-md">
+              <span class="font-label-sm text-label-sm text-primary uppercase mb-4 block">Institutional Dashboard</span>
+              <h3 class="font-headline-lg text-headline-lg mb-4 text-on-background">Your Wealth, <br/>Visualized.</h3>
+              <p class="text-on-surface-variant mb-6">Real-time asset tracking and advanced analytics presented in a minimalist, tactile interface.</p>
+              <button class="text-primary font-bold flex items-center gap-2 group">
+                Learn more <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </button>
             </div>
-
-            <div class="tiers-grid">
-                <div class="tier-card animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Starter</h3>
-                            <div class="tier-deposit">$20</div>
-                            <div class="tier-profit">$0.21 daily (1.0%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Perfect for beginners</li>
-                                <li><i class="ri-check-line"></i> 24/7 support</li>
-                                <li><i class="ri-check-line"></i> Daily withdrawals</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Get Started</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(1).jpg"
-                                alt="Starter Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Basic</h3>
-                            <div class="tier-deposit">$30</div>
-                            <div class="tier-profit">$0.36 daily (1.2%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Steady daily returns</li>
-                                <li><i class="ri-check-line"></i> Priority support</li>
-                                <li><i class="ri-check-line"></i> Bonus spins access</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Choose Plan</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(2).jpg"
-                                alt="Basic Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Bronze</h3>
-                            <div class="tier-deposit">$50</div>
-                            <div class="tier-profit">$0.75 daily (1.5%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Balanced growth</li>
-                                <li><i class="ri-check-line"></i> VIP status</li>
-                                <li><i class="ri-check-line"></i> Higher referral rates</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Choose Plan</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(3).jpg"
-                                alt="Bronze Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card featured animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Gold</h3>
-                            <div class="tier-deposit">$200</div>
-                            <div class="tier-profit">$3.6 daily (1.8%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Premium returns</li>
-                                <li><i class="ri-check-line"></i> Gold VIP status</li>
-                                <li><i class="ri-check-line"></i> Exclusive bonuses</li>
-                                <li><i class="ri-check-line"></i> Personal manager</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Choose Plan</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(4).jpg"
-                                alt="Gold Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Platinum</h3>
-                            <div class="tier-deposit">$500</div>
-                            <div class="tier-profit">$10 daily (2.0%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Elite investor</li>
-                                <li><i class="ri-check-line"></i> Platinum VIP</li>
-                                <li><i class="ri-check-line"></i> Maximum benefits</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Choose Plan</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(5).jpg"
-                                alt="Platinum Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tier-card animate-on-scroll">
-                    <div class="tier-content">
-                        <div class="tier-info">
-                            <h3 class="tier-name">Diamond</h3>
-                            <div class="tier-deposit">$1000</div>
-                            <div class="tier-profit">$22 daily (2.2%)</div>
-                            <ul class="tier-features">
-                                <li><i class="ri-check-line"></i> Professional grade</li>
-                                <li><i class="ri-check-line"></i> Diamond VIP</li>
-                                <li><i class="ri-check-line"></i> All features included</li>
-                            </ul>
-                            <a href="#cta" class="tier-button">Choose Plan</a>
-                        </div>
-                        <div class="tier-image">
-                            <img src="https://raw.githubusercontent.com/sajjch88-sketch/iluearnta/main/task%20%20(6).jpg"
-                                alt="Diamond Plan"
-                                style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
+            <div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-40">
+              <!-- দ্বিতীয় ইমেজ আপডেট করা হয়েছে -->
+              <img class="h-full w-full object-cover object-left" data-alt="A high-end, futuristic mobile application interface showcasing a crypto dashboard" src="https://github.com/sajjch88-sketch/xyv9090/blob/main/hgf.jpg?raw=true"/>
             </div>
+          </div>
+          <div class="md:col-span-4 premium-card rounded-3xl p-stack-lg flex flex-col justify-end">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-stack-md">
+              <span class="material-symbols-outlined text-primary">qr_code_2</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-2 text-on-surface">Universal Compatibility</h4>
+            <p class="text-on-surface-variant font-body-md text-body-md">Connect your wallet and start mining across any major network with a single scan.</p>
+          </div>
+          <div class="md:col-span-4 premium-card rounded-3xl p-stack-lg flex flex-col justify-end">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-stack-md">
+              <span class="material-symbols-outlined text-primary">monitoring</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-2 text-on-surface">Low Latency</h4>
+            <p class="text-on-surface-variant font-body-md text-body-md">High-frequency data updates ensure you're always acting on the latest market movements.</p>
+          </div>
+          <div class="md:col-span-8 premium-card rounded-3xl p-stack-lg flex items-center bg-gradient-to-r from-surface-container to-surface-container-high">
+            <div class="flex-1">
+              <h3 class="font-headline-lg text-headline-lg mb-2 text-primary">24/7 Global Support</h3>
+              <p class="text-on-surface-variant">Our elite concierge service is available around the clock to assist with your mining operations.</p>
+            </div>
+            <div class="hidden sm:flex items-center gap-2">
+              <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span class="text-label-sm text-on-surface-variant">Systems Online</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <div class="section-badge">⭐ User Reviews</div>
-                <h2 class="section-title">What Our <span class="gradient-text">Users Say</span></h2>
-                <p class="section-subtitle">
-                    Real stories from real users who are earning daily with IluEarntA.
-                </p>
-            </div>
-
-            <div class="testimonial-slider">
-                <div class="testimonial-card active">
-                    <p class="testimonial-quote">
-                        "I started with just $20 and now I'm earning over $100 daily! The referral program is amazing
-                        and the investment returns are consistent. This platform changed my life!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SK</div>
-                        <div class="author-info">
-                            <h4>Sarah Khan</h4>
-                            <p>Premium Investor</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "The spin wheel is my favorite feature! I won $100 last week and the task completion bonuses add
-                        up quickly. Best earning app I've ever used!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MA</div>
-                        <div class="author-info">
-                            <h4>Mohammed Ali</h4>
-                            <p>Active User</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "I was skeptical at first, but after my first withdrawal, I was convinced. The support team is
-                        helpful and the earnings are real. Highly recommend!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">EP</div>
-                        <div class="author-info">
-                            <h4>Emma Parker</h4>
-                            <p>Trusted Member</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-nav">
-                <div class="nav-dot active" data-slide="0"></div>
-                <div class="nav-dot" data-slide="1"></div>
-                <div class="nav-dot" data-slide="2"></div>
-            </div>
+    <!-- Final CTA Section -->
+    <section class="py-stack-xl md:py-32 relative">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center relative z-10">
+        <div class="bg-surface-container rounded-[2rem] p-stack-xl md:p-stack-xl border border-primary/10 overflow-hidden relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
+          <h2 class="font-display-lg text-display-lg mb-stack-md text-on-background relative z-10">Join the Elite Decentralized <br class="hidden md:block"/> Mining Revolution</h2>
+          <p class="text-on-surface-variant max-w-xl mx-auto mb-stack-lg relative z-10">Experience the future of finance today. Download the app and take control of your digital destiny.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+            <!-- ডাউনলোড লিংক আপডেট করা হয়েছে -->
+            <a href="https://drive.google.com/file/d/1gglr4AaGHSrnfuV7Dd6tkyGfyZcjPyfC/view?usp=sharing" target="_blank" class="golden-gradient-bg text-on-primary-fixed font-bold px-12 py-5 rounded-xl active:scale-95 transition-transform flex items-center justify-center gap-3">
+              <span class="material-symbols-outlined">download</span>
+              Get CoxsCoin Mobile
+            </a>
+            <button class="bg-surface-container-high text-primary border border-primary/20 font-bold px-12 py-5 rounded-xl hover:bg-primary/5 transition-colors flex items-center justify-center gap-3">
+              Explore Docs
+            </button>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- CTA Section -->
-    <section class="cta-section" id="cta">
-        <div class="container">
-            <div class="cta-content animate-on-scroll">
-                <h2 class="cta-title">Download <span class="gradient-text">IluEarntA Now</span></h2>
-                <div style="margin-top: 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                    <div style="color: rgba(255, 255, 255, 0.8);">
-                        <i class="ri-shield-check-line" style="color: #04e8a5;"></i> 100% Secure
-                    </div>
-                    <div style="color: rgba(255, 255, 255, 0.8);">
-                        <i class="ri-star-fill" style="color: #04e8a5;"></i> 4.8 Rating
-                    </div>
-                    <div style="color: rgba(255, 255, 255, 0.8);">
-                        <i class="ri-download-cloud-2-line" style="color: #04e8a5;"></i> 50K+ Downloads
-                    </div>
-                </div>
+  <!-- Footer -->
+  <footer class="w-full py-stack-lg border-t border-outline-variant/10 bg-surface-container-lowest">
+    <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-stack-md">
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <span class="font-headline-sm text-headline-sm text-primary">CoxsCoin</span>
+        <p class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-left">© 2024 CoxsCoin. Elite Decentralized Mining.</p>
+      </div>
+      <div class="flex gap-8">
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Status</a>
+      </div>
+      <div class="flex gap-4">
+        <a class="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center hover:border-primary/50 transition-colors group" href="#">
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary scale-90">public</span>
+        </a>
+        <a class="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center hover:border-primary/50 transition-colors group" href="#">
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary scale-90">chat</span>
+        </a>
+        <a class="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center hover:border-primary/50 transition-colors group" href="#">
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary scale-90">alternate_email</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-                <div class="cta-buttons" style="margin-top: 3rem;">
-                    <a href="#" class="btn-primary" onclick="handleAppDownload('android')"
-                        style="font-size: 1rem; padding: 1rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                        <i class="ri-google-play-fill"></i> Download
-                    </a>
-                    <p
-                        style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; text-align: center;">
-                        Free Download • Instant Setup • Start Earning Today
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Support</a>
-                <a href="#">FAQ</a>
-            </div>
-            <p>&copy; 2024 IluEarntA. All rights reserved. | Earn Money Daily</p>
-        </div>
-    </footer>
-
-    <script>
-        // App Download Handler
-        function handleAppDownload(platform) {
-            event.preventDefault();
-
-            // Get download link based on platform
-            const downloadLink = platform === 'android'
-                ? 'https://drive.google.com/uc?export=download&id=1gglr4AaGHSrnfuV7Dd6tkyGfyZcjPyfC'
-                : 'https://apps.apple.com/app/iluearnta/id123456789';
-
-            // Track download
-            trackDownload(platform);
-
-            // Create temporary link for automatic download
-            const tempLink = document.createElement('a');
-            tempLink.href = downloadLink;
-            tempLink.download = 'IluEarntA.apk';
-            tempLink.style.display = 'none';
-            document.body.appendChild(tempLink);
-            tempLink.click();
-            document.body.removeChild(tempLink);
-
-            // Show success notification
-            showDownloadNotification(platform);
-        }
-
-        function showDownloadNotification(platform) {
-            const notification = document.createElement('div');
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: linear-gradient(135deg, #04e8a5, #03b886);
-                color: #000;
-                padding: 1rem 1.5rem;
-                border-radius: 10px;
-                font-weight: 600;
-                z-index: 10000;
-                animation: slideInFromRight 0.5s ease;
-                box-shadow: 0 10px 30px rgba(4, 232, 165, 0.3);
-            `;
-
-            const platformName = platform === 'android' ? 'Android' : 'iOS';
-            notification.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ri-download-2-fill"></i>
-                    <span>Downloading IluEarntA for ${platformName}...</span>
-                </div>
-            `;
-
-            document.body.appendChild(notification);
-
-            // Remove notification after 3 seconds
-            setTimeout(() => {
-                notification.style.animation = 'slideOutToRight 0.5s ease';
-                setTimeout(() => {
-                    document.body.removeChild(notification);
-                }, 500);
-            }, 3000);
-
-            // Add CSS animations
-            if (!document.querySelector('#notification-animations')) {
-                const style = document.createElement('style');
-                style.id = 'notification-animations';
-                style.textContent = `
-                    @keyframes slideInFromRight {
-                        from { transform: translateX(100%); opacity: 0; }
-                        to { transform: translateX(0); opacity: 1; }
-                    }
-                    @keyframes slideOutToRight {
-                        from { transform: translateX(0); opacity: 1; }
-                        to { transform: translateX(100%); opacity: 0; }
-                    }
-                `;
-                document.head.appendChild(style);
-            }
-        }
-
-        function closeDownloadModal() {
-            const modal = document.querySelector('div[style*="position: fixed"]');
-            if (modal) {
-                modal.remove();
-            }
-        }
-
-        function trackDownload(platform) {
-            // Google Analytics or other tracking code would go here
-            console.log(`Download initiated for ${platform}`);
-            // You could also send this data to your backend
-        }
-
-        // Particle System
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = 50;
-
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 15 + 's';
-                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+  <script>
+    // Smooth scroll and hover micro-interactions
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
+      });
+    });
 
-        // Counter Animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 200;
-                let current = 0;
-
-                const updateCounter = () => {
-                    current += increment;
-                    if (current < target) {
-                        counter.textContent = Math.ceil(current).toLocaleString();
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target.toLocaleString();
-                    }
-                };
-
-                updateCounter();
-            });
-        }
-
-        // Scroll Animation
-        function handleScrollAnimation() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementBottom = element.getBoundingClientRect().bottom;
-
-                if (elementTop < window.innerHeight && elementBottom > 0) {
-                    element.classList.add('animated');
-                }
-            });
-        }
-
-        // Testimonial Slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.testimonial-card');
-        const dots = document.querySelectorAll('.nav-dot');
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-            currentSlide = index;
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Auto-advance testimonials
-        setInterval(nextSlide, 5000);
-
-        // Dot navigation
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
-
-        // Smooth Scroll for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Enable Mouse Wheel Scrolling
-        function enableMouseScrolling() {
-            document.body.style.overflowY = 'auto';
-            document.documentElement.style.overflowY = 'auto';
-
-            // Force enable scrolling with faster speed
-            window.addEventListener('wheel', function (e) {
-                e.preventDefault();
-                window.scrollBy({
-                    top: e.deltaY * 4, // 4x scroll speed
-                    behavior: 'auto' // Remove smooth for instant scrolling
-                });
-            }, { passive: false });
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function () {
-            createParticles();
-            enableMouseScrolling(); // Enable mouse wheel scrolling
-
-            // Trigger counter animation when stats are visible
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            });
-
-            const statsSection = document.querySelector('.hero-stats');
-            if (statsSection) {
-                observer.observe(statsSection);
-            }
-
-            // Handle scroll animations
-            window.addEventListener('scroll', handleScrollAnimation);
-            handleScrollAnimation(); // Check initial state
-        });
-
-        // Add parallax effect to orbs
-        window.addEventListener('mousemove', (e) => {
-            const orbs = document.querySelectorAll('.orb');
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-
-            orbs.forEach((orb, index) => {
-                const speed = (index + 1) * 10;
-                const xOffset = (x - 0.5) * speed;
-                const yOffset = (y - 0.5) * speed;
-
-                orb.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-            });
-        });
-    </script>
+    // Add scroll listener for header transparency
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 20) {
+        header.classList.add('bg-surface/95', 'shadow-lg');
+        header.classList.remove('bg-surface/80');
+      } else {
+        header.classList.add('bg-surface/80');
+        header.classList.remove('bg-surface/95', 'shadow-lg');
+      }
+    });
+  </script>
 </body>
-
 </html>
-
-
-
-
-
-
